@@ -1,0 +1,640 @@
+{
+  "timestamp": "2025-06-17 21:37:10 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Max retries exceeded with url: /api/rocket-api/game/issue-result/page?subServiceCode=RG1M&size=2000&current=1 (Caused by NewConnectionError('<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7fea9ef3a100>: Failed to establish a new connection: 0x04: Host unreachable'))"
+  }
+}
+{
+  "timestamp": "2025-06-17 21:37:30 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Max retries exceeded with url: /api/rocket-api/game/issue-result/page?subServiceCode=RG1M&size=2000&current=1 (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7fea9ef3a760>, 'Connection to m.coinvid.com timed out. (connect timeout=10)'))"
+  }
+}
+{
+  "timestamp": "2025-06-18 06:39:40 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-18 06:40:00 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Max retries exceeded with url: /api/rocket-api/game/issue-result/page?subServiceCode=RG1M&size=2000&current=1 (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7fea9fecf130>, 'Connection to m.coinvid.com timed out. (connect timeout=10)'))"
+  }
+}
+{
+  "timestamp": "2025-06-18 09:41:06 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out."
+  }
+}
+{
+  "timestamp": "2025-06-18 17:42:52 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 17:43:09 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 17:43:25 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 18:43:50 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-18 18:44:10 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Max retries exceeded with url: /api/rocket-api/game/issue-result/page?subServiceCode=RG1M&size=2000&current=1 (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7fea9febbee0>, 'Connection to m.coinvid.com timed out. (connect timeout=10)'))"
+  }
+}
+{
+  "timestamp": "2025-06-18 18:44:27 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 19:44:45 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 19:45:02 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 19:45:19 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 20:45:38 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 20:45:55 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 20:46:12 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 21:46:31 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 21:46:49 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-18 21:47:06 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection broken: IncompleteRead(0 bytes read, 2 more expected)', IncompleteRead(0 bytes read, 2 more expected))"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:47 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:47 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:48 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:49 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:50 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:50 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:51 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:52 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:53 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:53 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:54 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:55 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:56 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:56 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:57 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:58 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:59 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:47:59 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:00 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:01 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:02 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:03 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:03 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:04 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:05 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:06 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:06 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:07 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:08 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:09 +0700",
+  "error": "Missing 'data' or 'records'",
+  "response": {
+    "code": 40301,
+    "success": false,
+    "data": {
+      "ip": "193.26.115.43"
+    },
+    "msg": "IP restriction"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:09 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:21 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 00:48:34 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 12:39:42 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 12:39:53 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 12:40:05 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 12:56:53 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 12:57:05 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 12:57:17 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:11:27 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:11:49 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:12:11 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:13:50 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:14:11 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:16:29 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:16:51 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-19 13:17:12 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Read timed out. (read timeout=10)"
+  }
+}
+{
+  "timestamp": "2025-06-20 04:22:20 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Max retries exceeded with url: /api/rocket-api/game/issue-result/page?subServiceCode=RG1M&size=2000&current=1 (Caused by NewConnectionError('<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f37f7208100>: Failed to establish a new connection: 0x04: Host unreachable'))"
+  }
+}
+{
+  "timestamp": "2025-06-20 04:22:40 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Max retries exceeded with url: /api/rocket-api/game/issue-result/page?subServiceCode=RG1M&size=2000&current=1 (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f37f71f4a90>, 'Connection to m.coinvid.com timed out. (connect timeout=10)'))"
+  }
+}
+{
+  "timestamp": "2025-06-20 04:23:00 +0700",
+  "error": "Request error",
+  "response": {
+    "error": "SOCKSHTTPSConnectionPool(host='m.coinvid.com', port=443): Max retries exceeded with url: /api/rocket-api/game/issue-result/page?subServiceCode=RG1M&size=2000&current=1 (Caused by ConnectTimeoutError(<urllib3.contrib.socks.SOCKSHTTPSConnection object at 0x7f37f7208f70>, 'Connection to m.coinvid.com timed out. (connect timeout=10)'))"
+  }
+}
