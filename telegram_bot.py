@@ -32,7 +32,7 @@ USER_KEYS = {}
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Xử lý lệnh /start."""
     user_id = update.effective_user.id
-    contact_msg = "\nLiên hệ @Daidzvc để mua key và sử dụng."
+    contact_msg = "\nLiên hệ @Nhanoke để mua key và sử dụng."
     if user_id == ADMIN_ID:
         await update.message.reply_text(
             "Chào admin! Dùng /admin để quản lý, /analyze để phân tích, hoặc /help để xem hướng dẫn." + contact_msg
@@ -65,7 +65,7 @@ async def set_key(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     """Xử lý lệnh /help."""
     user_id = update.effective_user.id
-    contact_msg = "\nLiên hệ @Daidzvc để mua key và sử dụng."
+    contact_msg = "\nLiên hệ @Nhanoke để mua key và sử dụng."
     if user_id == ADMIN_ID:
         help_text = (
             "Hướng dẫn sử dụng (Admin):\n"
