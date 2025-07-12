@@ -247,19 +247,36 @@ def fetch_historical_data(record_count=2000):
         return False, "No data fetched."
 
 def main():
-    """Chạy liên tục để cập nhật dữ liệu mỗi 1 giờ"""
+    """Chạy để cập nhật dữ liệu khi bắt đầu giờ và ngay khi khởi động"""
     vietnam_tz = timezone(timedelta(hours=7))
+    
+    # Thực hiện cập nhật ngay khi khởi động
+    current_time = datetime.now(vietnam_tz)
+    print(f"[{current_time.strftime('%Y-%m-%d %H:%M:%S %z')}] Starting initial data update...")
+    success, message = fetch_historical_data(2000)
+    if success:
+        print(f"[{current_time.strftime('%Y-%m-%d %H:%M:%S %z')}] Initial data update completed. Fetched {message} records.")
+    else:
+        print(f"[{current_time.strftime('%Y-%m-%d %H:%M:%S %z')}] Initial data update failed: {message}")
+
     while True:
-        current_time = datetime.now(vietnam_tz).strftime("%Y-%m-%d %H:%M:%S %z")
-        print(f"[{current_time}] Starting data update...")
+        current_time = datetime.now(vietnam_tz)
+        next_hour = (current_time.replace(minute=0, second=0, microsecond=0) + timedelta(hours=1))
+        
+        # Tính thời gian chờ đến đầu giờ tiếp theo
+        wait_seconds = (next_hour - current_time).total_seconds()
+        if wait_seconds > 0:
+            print(f"[{current_time.strftime('%Y-%m-%d %H:%M:%S %z')}] Waiting {wait_seconds:.0f} seconds until {next_hour.strftime('%H:%M:%S')}...")
+            time.sleep(wait_seconds)
+
+        # Cập nhật dữ liệu khi bắt đầu giờ mới
+        current_time = datetime.now(vietnam_tz)
+        print(f"[{current_time.strftime('%Y-%m-%d %H:%M:%S %z')}] Starting hourly data update...")
         success, message = fetch_historical_data(2000)
         if success:
-            print(f"[{current_time}] Data update completed. Fetched {message} records.")
+            print(f"[{current_time.strftime('%Y-%m-%d %H:%M:%S %z')}] Hourly data update completed. Fetched {message} records.")
         else:
-            print(f"[{current_time}] Data update failed: {message}")
-        
-        # Chờ 1 giờ trước khi cập nhật lại
-        time.sleep(3600)
+            print(f"[{current_time.strftime('%Y-%m-%d %H:%M:%S %z')}] Hourly data update failed: {message}")
 
 if __name__ == "__main__":
     main()
