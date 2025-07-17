@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinvidBot Setup Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to bottom, #f3f4f6, #e5e7eb);
+            color: #1f2937;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .step {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1rem;
+        }
+        .code-block {
+            background: #1f2937;
+            color: #e5e7eb;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-4xl font-bold text-center mb-6">CoinvidBot Setup Guide</h1>
+        <p class="text-lg mb-4">This guide provides step-by-step instructions to set up the CoinvidBot project on a Linux system (Ubuntu/Debian).</p>
+
+        <h2 class="text-2xl font-semibold mb-4">Prerequisites</h2>
+        <ul class="list-disc pl-6 mb-6 text-base">
+            <li>A Linux-based system (e.g., Ubuntu/Debian).</li>
+            <li>Root or sudo privileges.</li>
+            <li>Internet connection for downloading packages and cloning the repository.</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mb-4">Setup Instructions</h2>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">1. Update Package Lists</h3>
+            <p class="text-base">Refresh the system's package repository.</p>
+            <pre class="code-block">sudo apt update</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">2. Upgrade System Packages</h3>
+            <p class="text-base">Update all installed packages to their latest versions.</p>
+            <pre class="code-block">apt update && apt upgrade -y</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">3. Install Python and Development Libraries</h3>
+            <p class="text-base">Install Python 3, pip, and required development libraries.</p>
+            <pre class="code-block">apt install python3 python3-pip libssl-dev libffi-dev -y</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">4. Install python-socks</h3>
+            <p class="text-base">Install the python-socks library for SOCKS proxy support.</p>
+            <pre class="code-block">pip install python-socks</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">5. Install Git</h3>
+            <p class="text-base">Install Git for version control.</p>
+            <pre class="code-block">sudo apt install git</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">6. Install tmux</h3>
+            <p class="text-base">Install tmux for managing terminal sessions.</p>
+            <pre class="code-block">sudo apt install -y tmux</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">7. Verify Installed Versions</h3>
+            <p class="text-base">Check the versions of installed tools.</p>
+            <pre class="code-block">git --version
+python3 --version
+pip3 --version
+tmux -V</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">8. Install Python Dependencies</h3>
+            <p class="text-base">Install required Python libraries for the bot.</p>
+            <pre class="code-block">pip3 install python-telegram-bot dotenv stem requests</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">9. Install Tor</h3>
+            <p class="text-base">Install Tor for anonymous network communication.</p>
+            <pre class="code-block">apt install tor -y</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">10. Start Tor Service</h3>
+            <p class="text-base">Launch the Tor service.</p>
+            <pre class="code-block">systemctl start tor</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">11. Enable Tor on Boot</h3>
+            <p class="text-base">Configure Tor to start automatically on system boot.</p>
+            <pre class="code-block">systemctl enable tor</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">12. Check Tor Status</h3>
+            <p class="text-base">Verify that the Tor service is running.</p>
+            <pre class="code-block">sudo service tor status</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">13. Test Tor Connectivity</h3>
+            <p class="text-base">Check your public IP through Tor's SOCKS5 proxy.</p>
+            <pre class="code-block">curl --socks5 localhost:9050 https://api.ipify.org</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">14. Restart Tor Service</h3>
+            <p class="text-base">Restart Tor to apply changes.</p>
+            <pre class="code-block">sudo service tor restart</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">15. Clone CoinvidBot Repository</h3>
+            <p class="text-base">Download the CoinvidBot source code from GitHub.</p>
+            <pre class="code-block">git clone https://github.com/Daicool/CoinvidBot.git</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">16. Set Timezone</h3>
+            <p class="text-base">Configure the system timezone to Asia/Ho_Chi_Minh.</p>
+            <pre class="code-block">sudo timedatectl set-timezone Asia/Ho_Chi_Minh</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">17. Create a tmux Session</h3>
+            <p class="text-base">Start a new tmux session named "CoinvidSession".</p>
+            <pre class="code-block">tmux new -s CoinvidSession</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">18. Split tmux Window</h3>
+            <p class="text-base">Split the tmux window horizontally.</p>
+            <pre class="code-block">tmux split-window -h</pre>
+        </div>
+
+        <div class="step">
+            <h3 class="text-xl font-medium">19. Reattach to tmux Session</h3>
+            <p class="text-base">Reconnect to the "CoinvidSession".</p>
+            <pre class="code-block">tmux attach-session -t CoinvidSession</pre>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4">Next Steps</h2>
+        <ul class="list-disc pl-6 mb-6 text-base">
+            <li>Navigate to the <code class="bg-gray-200 px-1 rounded">CoinvidBot</code> directory (<code>cd CoinvidBot</code>).</li>
+            <li>Configure environment variables (e.g., Telegram bot token) in a <code class="bg-gray-200 px-1 rounded">.env</code> file.</li>
+            <li>Run the bot using the appropriate command (refer to the project's documentation).</li>
+        </ul>
+
+        <h2 class="text-2xl font-semibold mb-4">Troubleshooting</h2>
+        <ul class="list-disc pl-6 mb-6 text-base">
+            <li>If Tor fails to connect, check the service status with <code class="bg-gray-200 px-1 rounded">sudo service tor status</code> and ensure port 9050 is open.</li>
+            <li>Verify Python dependencies with <code class="bg-gray-200 px-1 rounded">pip3 list</code>.</li>
+            <li>For tmux issues, list active sessions with <code class="bg-gray-200 px-1 rounded">tmux list-sessions</code>.</li>
+        </ul>
+
+        <p class="text-lg text-center font-semibold mt-8">Happy coding with CoinvidBot!</p>
+    </div>
+</body>
+</html>
