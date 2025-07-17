@@ -1,103 +1,144 @@
-CoinvidBot Setup Guide
-This guide provides step-by-step instructions to set up the CoinvidBot project on a Linux system (Ubuntu/Debian). Follow the commands in order to configure the environment, install dependencies, and run the bot.
-Prerequisites
+🚀 CoinvidBot Setup Guide
+Welcome to the setup guide for CoinvidBot! This document walks you through the process of setting up the bot on a Linux system (Ubuntu/Debian) with clear, concise steps. Let's get started! 🎉
 
-A Linux-based system (e.g., Ubuntu/Debian).
-Root or sudo privileges.
-Internet connection for downloading packages and cloning the repository.
+📋 Prerequisites
 
-Setup Instructions
+🖥️ A Linux-based system (e.g., Ubuntu/Debian).
+🔑 Root or sudo privileges.
+🌐 Internet connection for downloading packages and cloning the repository.
 
-Update Package ListsRefresh the system's package repository to ensure you have the latest package information.
+
+🛠️ Setup Instructions
+Follow these steps in order to configure the environment and run CoinvidBot:
+
+
+
+Step
+Command
+Description
+
+
+
+1
 sudo apt update
+🔄 Refresh package repository lists.
 
 
-Upgrade System PackagesUpdate all installed packages to their latest versions.
+2
 apt update && apt upgrade -y
+🔝 Update all installed packages to the latest versions.
 
 
-Install Python and Development LibrariesInstall Python 3, pip, and required development libraries for SSL and FFI.
+3
 apt install python3 python3-pip libssl-dev libffi-dev -y
+🐍 Install Python 3, pip, and SSL/FFI development libraries.
 
 
-Install python-socksInstall the python-socks library to enable SOCKS proxy support.
+4
 pip install python-socks
+🧦 Install python-socks for SOCKS proxy support.
 
 
-Install GitInstall Git for version control and cloning the repository.
+5
 sudo apt install git
+📦 Install Git for version control.
 
 
-Install tmuxInstall tmux for managing terminal sessions.
+6
 sudo apt install -y tmux
+🖥️ Install tmux for terminal session management.
 
 
-Verify Installed VersionsCheck the versions of installed tools to ensure successful installation.
-git --version
-python3 --version
-pip3 --version
-tmux -V
+7
+git --version  python3 --version  pip3 --version  tmux -V
+✅ Verify versions of installed tools.
 
 
-Install Python DependenciesInstall Python libraries required for the bot: python-telegram-bot, dotenv, stem, and requests.
+8
 pip3 install python-telegram-bot dotenv stem requests
+📚 Install Python libraries for Telegram bot, environment variables, Tor, and HTTP requests.
 
 
-Install TorInstall Tor for anonymous network communication.
+9
 apt install tor -y
+🕵️ Install Tor for anonymous networking.
 
 
-Start Tor ServiceLaunch the Tor service.
+10
 systemctl start tor
+▶️ Start the Tor service.
 
 
-Enable Tor on BootConfigure Tor to start automatically on system boot.
+11
 systemctl enable tor
+🔄 Enable Tor to run on system boot.
 
 
-Check Tor StatusVerify that the Tor service is running.
+12
 sudo service tor status
+🔔 Check the status of the Tor service.
 
 
-Test Tor ConnectivityCheck your public IP through Tor's SOCKS5 proxy to confirm it’s working.
+13
 curl --socks5 localhost:9050 https://api.ipify.org
+🌐 Verify Tor connectivity by checking public IP.
 
 
-Restart Tor ServiceRestart Tor to apply any changes.
+14
 sudo service tor restart
+🔄 Restart the Tor service to apply changes.
 
 
-Clone CoinvidBot RepositoryDownload the CoinvidBot source code from GitHub.
+15
 git clone https://github.com/Daicool/CoinvidBot.git
+📥 Clone the CoinvidBot repository.
 
 
-Set TimezoneConfigure the system timezone to Asia/Ho_Chi_Minh.
+16
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
+⏰ Set system timezone to Asia/Ho_Chi_Minh.
 
 
-Create a tmux SessionStart a new tmux session named "CoinvidSession" for running the bot.
+17
 tmux new -s CoinvidSession
+🖼️ Create a new tmux session named "CoinvidSession".
 
 
-Split tmux WindowSplit the tmux window horizontally for multitasking.
+18
 tmux split-window -h
+➗ Split the tmux window horizontally.
 
 
-Reattach to tmux SessionReconnect to the "CoinvidSession" if disconnected.
+19
 tmux attach-session -t CoinvidSession
+🔗 Reattach to the "CoinvidSession" tmux session.
 
 
 
-Next Steps
+🚀 Next Steps
 
-Navigate to the CoinvidBot directory (cd CoinvidBot).
-Configure any required environment variables (e.g., Telegram bot token) in a .env file.
-Run the bot using the appropriate command (refer to the project's documentation).
+Navigate to the project directory:cd CoinvidBot
 
-Troubleshooting
 
-If Tor fails to connect, check the service status with sudo service tor status and ensure port 9050 is open.
-Verify Python dependencies are installed correctly using pip3 list.
-For tmux issues, ensure the session name is correct or list active sessions with tmux list-sessions.
+Configure environment variables (e.g., Telegram bot token) in a .env file.
+Run the bot (refer to the project's documentation for specific commands).
 
-Happy coding with CoinvidBot!
+
+⚠️ Troubleshooting
+
+Tor not working? Check the service status with:sudo service tor status
+
+Ensure port 9050 is open.
+Missing Python libraries? Verify installed packages with:pip3 list
+
+
+tmux issues? List active sessions with:tmux list-sessions
+
+
+
+
+💡 Pro Tip: Keep your terminal organized with tmux to manage multiple tasks efficiently!
+
+
+🌟 Happy Coding!
+Thank you for using CoinvidBot! If you have questions, check the GitHub Issues page or contact the maintainers. 🎉
